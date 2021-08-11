@@ -1,0 +1,17 @@
+// 填满
+@mixin wh($w:100%, $h:100%) {
+  width: $w;
+  height: $h;
+}
+
+@mixin fx($v:space-between, $w:center) {
+  display: flex;
+  justify-content: $v;
+  align-items: $w;
+
+}
+
+$border-color: #E7E7E7;
+$module-main-color:#4CC5CD;
+$followUp-main-color:#529FEF;
+$table-border-color: #EEEFF3;
