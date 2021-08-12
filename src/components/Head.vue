@@ -7,6 +7,8 @@
             <b-navbar-nav>
               <b-nav-item class="active" href="#Home">Home</b-nav-item>
               <b-nav-item href="#Services">Services</b-nav-item>
+              <b-nav-item href="#Promise">Promise</b-nav-item>
+              <b-nav-item href="#Flow">Flow</b-nav-item>
               <b-nav-item href="#Contact">ContactUs</b-nav-item>
               <!-- Navbar dropdowns -->
             </b-navbar-nav>
