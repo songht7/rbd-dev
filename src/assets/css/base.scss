@@ -10,13 +10,35 @@
   height: 60px;
   background: #fff;
   z-index: 10;
+  border-bottom: 1px solid #efefef;
 }
 #Page-container {
-  padding: 65px 0 0;
+  padding: 60px 0 0;
 }
 .page-block {
   padding: 15px 0;
 }
-// .page-block:nth-child(odd) {
-//   background: rgb(150, 176, 248);
-// }
+.block-bg {
+  background: #f0f4f9;
+}
+.brow {
+  padding-bottom: 15px;
+  line-height: 1.4;
+}
+.temp-row,
+.temp-row p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.col-img {
+  display: inline;
+  width: 100%;
+}
+.col-img-full {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.line-lg {
+  padding-bottom: 0.5rem;
+}

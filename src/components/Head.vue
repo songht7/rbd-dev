@@ -11,7 +11,7 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-navbar-brand href="#">
               <img
-                src="../assets/image/logo.png"
+                src="../assets/images/logo.png"
                 class="d-inline-block align-top"
                 alt="rbd group"
               />
