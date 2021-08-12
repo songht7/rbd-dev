@@ -9,19 +9,19 @@
             </template>
             <template v-slot:lead>
               <div class="temp-row">
-                <p >
-                  WuXi Address: 
+                <p>
+                  WuXi Address:
                 </p>
                 <p class="line-lg">
-                  401room, building1, xingzhou business park, 89
-                  xingchuang four road, new sitrict, WuXi city, Jiangsu Province
+                  401room, building1, xingzhou business park, 89 xingchuang four
+                  road, new sitrict, WuXi city, Jiangsu Province
                 </p>
                 <p>
-                  Shanghai Address: 
+                  Shanghai Address:
                 </p>
                 <p class="line-lg">
-                  15th floor, building 1, enterprise world,
-                  222 hubin road, Shanghai
+                  15th floor, building 1, enterprise world, 222 hubin road,
+                  Shanghai
                 </p>
                 <p class="line-lg"></p>
                 <p class="line-lg">Cell Phone: +86-18602974630</p>
@@ -71,6 +71,17 @@
               ></b-form-input>
             </b-col>
           </b-row>
+          <b-row class="my-3">
+            <b-col>
+              <b-form-textarea
+                id="mark"
+                v-model="mark"
+                placeholder="Enter something..."
+                rows="3"
+                max-rows="6"
+              ></b-form-textarea>
+            </b-col>
+          </b-row>
           <b-row class="my-2">
             <b-col>
               <div class="btn-box">
@@ -113,7 +124,7 @@ export default {
       alertShow: false,
       variant: "danger", //success danger warning
       variantVal: "",
-      loading: true,
+      loading: false,
       formData: {
         name: "",
         phone: "",
