@@ -20,30 +20,32 @@
             @sliding-end="onSlideEnd"
           >
             <b-carousel-slide
-              caption="First slide"
+              caption=""
               text=""
-              img-src="@img/1.png"
+              img-src="http://www.jobpgroup.com/img/1.jpg"
             ></b-carousel-slide>
 
-            <b-carousel-slide img-src="@img/2.png">
+            <b-carousel-slide img-src="http://www.jobpgroup.com/img/2.jpg">
               <h1></h1>
             </b-carousel-slide>
 
-            <b-carousel-slide img-src="@img/3.png"></b-carousel-slide>
+            <b-carousel-slide
+              img-src="http://www.jobpgroup.com/img/4.jpg"
+            ></b-carousel-slide>
 
-            <b-carousel-slide>
+            <!-- <b-carousel-slide>
               <template v-slot:img>
                 <img
                   class="d-block img-fluid w-100"
                   width="1024"
                   height="480"
-                  src="https://picsum.photos/1024/480/?image=55"
+              img-src="http://www.jobpgroup.com/img/2.png"
                   alt="image slot"
                 />
               </template>
-            </b-carousel-slide>
+            </b-carousel-slide> -->
 
-            <b-carousel-slide
+            <!-- <b-carousel-slide
               caption="Blank Image"
               img-blank
               img-alt="Blank image"
@@ -53,7 +55,7 @@
                 Suspendisse eros felis, tincidunt a tincidunt eget, convallis
                 vel est. Ut pellentesque ut lacus vel interdum.
               </p>
-            </b-carousel-slide>
+            </b-carousel-slide> -->
           </b-carousel>
         </div>
         <!-- </b-container> -->

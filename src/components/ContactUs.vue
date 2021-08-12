@@ -2,9 +2,46 @@
   <div class="form-box">
     <b-container class="bv-example-row">
       <b-row>
-        <b-col cols="6"> </b-col>
         <b-col cols="6">
-          <b-row class="my-1">
+          <b-jumbotron>
+            <template v-slot:header>
+              Contact Us
+            </template>
+            <template v-slot:lead>
+              <div class="temp-row">
+                <p >
+                  WuXi Address: 
+                </p>
+                <p class="line-lg">
+                  401room, building1, xingzhou business park, 89
+                  xingchuang four road, new sitrict, WuXi city, Jiangsu Province
+                </p>
+                <p>
+                  Shanghai Address: 
+                </p>
+                <p class="line-lg">
+                  15th floor, building 1, enterprise world,
+                  222 hubin road, Shanghai
+                </p>
+                <p class="line-lg"></p>
+                <p class="line-lg">Cell Phone: +86-18602974630</p>
+                <p class="line-lg">Email:xin.lv@rbdgroup.com.cn</p>
+              </div>
+            </template>
+          </b-jumbotron>
+        </b-col>
+        <!-- <b-col cols="2"> </b-col> -->
+        <b-col cols="6">
+          <b-row class="my-3">
+            <b-col>
+              <b-jumbotron>
+                <template v-slot:header>
+                  Send Message
+                </template>
+              </b-jumbotron>
+            </b-col>
+          </b-row>
+          <b-row class="my-3">
             <b-col>
               <b-form-input
                 id="type-text"
@@ -14,7 +51,7 @@
               ></b-form-input>
             </b-col>
           </b-row>
-          <b-row class="my-1">
+          <b-row class="my-3">
             <b-col>
               <b-form-input
                 id="type-number"
@@ -24,7 +61,7 @@
               ></b-form-input>
             </b-col>
           </b-row>
-          <b-row class="my-1">
+          <b-row class="my-3">
             <b-col>
               <b-form-input
                 id="type-email"
@@ -34,7 +71,7 @@
               ></b-form-input>
             </b-col>
           </b-row>
-          <b-row class="my-1">
+          <b-row class="my-2">
             <b-col>
               <div class="btn-box">
                 <b-alert
