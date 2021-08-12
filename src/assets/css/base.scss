@@ -48,7 +48,40 @@
 }
 .alert-block {
   position: absolute;
-  top:-150%;
+  top: -150%;
   left: 0;
   width: 100%;
+}
+
+// @media (min-width: 812px) {
+@media (min-width: 812px) and (max-width: 1024px) {
+  .navbar-box {
+    height: 6rem;
+  }
+  .navbar {
+    padding: 0;
+    line-height: 2.2;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 2rem;
+  }
+  .lead,
+  .temp-row,
+  .temp-row p {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+  .brow {
+    padding-bottom: 2rem;
+  }
+  .form-control {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  // #Contact .temp-row,
+  // #Contact .temp-row p {
+  //   font-size: 2.4rem;
+  // }
 }

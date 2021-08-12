@@ -2,7 +2,7 @@
   <div class="form-box">
     <b-container class="bv-example-row">
       <b-row>
-        <b-col cols="6">
+        <b-col :cols="ContactCols">
           <b-jumbotron>
             <template v-slot:header>
               Contact Us
@@ -38,78 +38,80 @@
           </b-jumbotron>
         </b-col>
         <!-- <b-col cols="2"> </b-col> -->
-        <b-col cols="6">
-          <b-row class="my-3">
-            <b-col>
-              <b-jumbotron>
-                <template v-slot:header>
-                  Send Message
-                </template>
-              </b-jumbotron>
-            </b-col>
-          </b-row>
-          <b-row class="my-3">
-            <b-col>
-              <b-form-input
-                id="type-text"
-                type="text"
-                placeholder="Enter your name"
-                v-model="name"
-              ></b-form-input>
-            </b-col>
-          </b-row>
-          <b-row class="my-3">
-            <b-col>
-              <b-form-input
-                id="type-number"
-                type="number"
-                placeholder="Enter your phone number"
-                v-model="phone"
-              ></b-form-input>
-            </b-col>
-          </b-row>
-          <b-row class="my-3">
-            <b-col>
-              <b-form-input
-                id="type-email"
-                type="email"
-                placeholder="Enter your email"
-                v-model="email"
-              ></b-form-input>
-            </b-col>
-          </b-row>
-          <b-row class="my-3">
-            <b-col>
-              <b-form-textarea
-                id="mark"
-                v-model="mark"
-                placeholder="Enter something..."
-                rows="3"
-                max-rows="6"
-              ></b-form-textarea>
-            </b-col>
-          </b-row>
-          <b-row class="my-2">
-            <b-col>
-              <div class="btn-box">
-                <b-alert
-                  class="alert-block"
-                  :show="alertShow"
-                  :variant="variant"
-                  fade
-                >
-                  {{ variantVal }}
-                </b-alert>
-                <b-button
-                  :block="block"
-                  variant="primary"
-                  style="width:100%"
-                  @click="OnSubmit"
-                  >Submit</b-button
-                >
-              </div>
-            </b-col>
-          </b-row>
+        <b-col :cols="ContactCols">
+          <b-col>
+            <b-jumbotron>
+              <template v-slot:header>
+                Send Message
+              </template>
+              <template v-slot:lead>
+                <div class="temp-row">
+                  <b-row class="my-3">
+                    <b-col>
+                      <b-form-input
+                        id="type-text"
+                        type="text"
+                        placeholder="Enter your name"
+                        v-model="name"
+                      ></b-form-input>
+                    </b-col>
+                  </b-row>
+                  <b-row class="my-3">
+                    <b-col>
+                      <b-form-input
+                        id="type-number"
+                        type="number"
+                        placeholder="Enter your phone number"
+                        v-model="phone"
+                      ></b-form-input>
+                    </b-col>
+                  </b-row>
+                  <b-row class="my-3">
+                    <b-col>
+                      <b-form-input
+                        id="type-email"
+                        type="email"
+                        placeholder="Enter your email"
+                        v-model="email"
+                      ></b-form-input>
+                    </b-col>
+                  </b-row>
+                  <b-row class="my-3">
+                    <b-col>
+                      <b-form-textarea
+                        id="mark"
+                        v-model="mark"
+                        placeholder="Enter something..."
+                        rows="3"
+                        max-rows="6"
+                      ></b-form-textarea>
+                    </b-col>
+                  </b-row>
+                  <b-row class="my-2">
+                    <b-col>
+                      <div class="btn-box">
+                        <b-alert
+                          class="alert-block"
+                          :show="alertShow"
+                          :variant="variant"
+                          fade
+                        >
+                          {{ variantVal }}
+                        </b-alert>
+                        <b-button
+                          :block="block"
+                          variant="primary"
+                          style="width:100%"
+                          @click="OnSubmit"
+                          >Submit Request</b-button
+                        >
+                      </div>
+                    </b-col>
+                  </b-row>
+                </div>
+              </template>
+            </b-jumbotron>
+          </b-col>
         </b-col>
       </b-row>
     </b-container>
@@ -118,11 +120,14 @@
 
 <script>
 var graceChecker = require("/public/graceChecker.js");
+var MobileDetect = require("mobile-detect"),
+  md = new MobileDetect(navigator.userAgent);
 export default {
   name: "ContactUs",
   props: [],
   data() {
     return {
+      ContactCols: 6,
       block: true,
       name: "",
       phone: "",
@@ -146,6 +151,13 @@ export default {
   computed: {},
   mounted() {
     // this.getAuthority();
+    var that = this;
+    //console.log(md.mobile());
+    if (md.mobile()) {
+      that.ContactCols = 12;
+    } else {
+      that.ContactCols = 6;
+    }
   },
   methods: {
     OnSubmit() {

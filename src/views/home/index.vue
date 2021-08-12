@@ -202,10 +202,10 @@
             </b-jumbotron>
           </b-row>
           <b-row class="brow">
-            <b-col cols="4">
+            <b-col :cols="AuditorCols1">
               <img src="@img/4.jpg" class="col-img align-top" alt="rbd group" />
             </b-col>
-            <b-col cols="8">
+            <b-col :cols="AuditorCols2">
               <b-jumbotron>
                 <template v-slot:lead>
                   <div class="temp-row">
@@ -567,15 +567,32 @@
 
 <script>
 import ContactUs from "@/components/ContactUs";
+var MobileDetect = require("mobile-detect"),
+  md = new MobileDetect(navigator.userAgent);
 export default {
   data() {
     return {
       slide: 0,
       sliding: null,
+      AuditorCols1: 4,
+      AuditorCols2: 8,
     };
   },
   components: {
     ContactUs,
+  },
+  mounted() {
+    // this.getAuthority();
+    var that = this;
+    //console.log(md.mobile());
+    if (md.mobile()) {
+      that.cols = 12;
+      that.AuditorCols1 = 12;
+      that.AuditorCols2 = 12;
+    } else {
+      that.AuditorCols1 = 4;
+      that.AuditorCols2 = 8;
+    }
   },
   methods: {
     onSlideStart(slide) {
