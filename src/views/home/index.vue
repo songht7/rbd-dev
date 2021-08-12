@@ -2,7 +2,7 @@
   <div id="Page-main">
     <Head></Head>
     <div id="Page-container">
-      <div class="page-block">
+      <div id="Home" class="page-block">
         <!-- <b-container fluid="xl"> -->
         <div class="silde-box">
           <b-carousel
@@ -22,7 +22,7 @@
             <b-carousel-slide
               caption=""
               text=""
-              img-src="http://www.jobpgroup.com/img/1.jpg"
+              img-src="http://www.jobpgroup.com/img/4.jpg"
             ></b-carousel-slide>
 
             <b-carousel-slide img-src="http://www.jobpgroup.com/img/2.jpg">
@@ -30,7 +30,7 @@
             </b-carousel-slide>
 
             <b-carousel-slide
-              img-src="http://www.jobpgroup.com/img/4.jpg"
+              img-src="http://www.jobpgroup.com/img/1.jpg"
             ></b-carousel-slide>
 
             <!-- <b-carousel-slide>
@@ -39,7 +39,7 @@
                   class="d-block img-fluid w-100"
                   width="1024"
                   height="480"
-              img-src="http://www.jobpgroup.com/img/2.png"
+              img-src="http://www.jobpgroup.com/img/2.jpg"
                   alt="image slot"
                 />
               </template>
@@ -61,7 +61,7 @@
         <!-- </b-container> -->
       </div>
 
-      <div class="page-block">
+      <div id="Services" class="page-block">
         <b-container fluid="xl">
           <b-row class="brow">
             <b-jumbotron>
@@ -154,21 +154,21 @@
           <b-row class="brow">
             <b-col cols="4">
               <img
-                src="@img/1.png"
+                src="@img/1.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="4">
               <img
-                src="@img/2.png"
+                src="@img/2.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="4">
               <img
-                src="@img/3.png"
+                src="@img/3.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
@@ -203,7 +203,7 @@
           </b-row>
           <b-row class="brow">
             <b-col cols="4">
-              <img src="@img/4.png" class="col-img align-top" alt="rbd group" />
+              <img src="@img/4.jpg" class="col-img align-top" alt="rbd group" />
             </b-col>
             <b-col cols="8">
               <b-jumbotron>
@@ -248,14 +248,14 @@
           <b-row class="brow">
             <b-col cols="6">
               <img
-                src="@img/5.png"
+                src="@img/5.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="6">
               <img
-                src="@img/6.png"
+                src="@img/6.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
@@ -286,13 +286,13 @@
           </b-row>
           <b-row class="brow">
             <b-col cols="4">
-              <img src="@img/7.png" class="col-img align-top" alt="rbd group" />
+              <img src="@img/7.jpg" class="col-img align-top" alt="rbd group" />
             </b-col>
             <b-col cols="4">
-              <img src="@img/8.png" class="col-img align-top" alt="rbd group" />
+              <img src="@img/8.jpg" class="col-img align-top" alt="rbd group" />
             </b-col>
             <b-col cols="4">
-              <img src="@img/9.png" class="col-img align-top" alt="rbd group" />
+              <img src="@img/9.jpg" class="col-img align-top" alt="rbd group" />
             </b-col>
           </b-row>
           <b-row class="brow">
@@ -319,28 +319,28 @@
           <b-row class="brow">
             <b-col cols="3">
               <img
-                src="@img/10.png"
+                src="@img/10.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="3">
               <img
-                src="@img/11.png"
+                src="@img/11.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="3">
               <img
-                src="@img/12.png"
+                src="@img/12.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="3">
               <img
-                src="@img/13.png"
+                src="@img/13.jpg"
                 class="col-img col-img-full  align-top"
                 alt="rbd group"
               />
@@ -368,14 +368,14 @@
           <b-row class="brow">
             <b-col cols="6">
               <img
-                src="@img/14.png"
+                src="@img/14.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="6">
               <img
-                src="@img/15.png"
+                src="@img/15.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
@@ -413,14 +413,14 @@
           <b-row class="brow">
             <b-col cols="6">
               <img
-                src="@img/16.png"
+                src="@img/16.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="6">
               <img
-                src="@img/17.png"
+                src="@img/17.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
@@ -465,14 +465,14 @@
           <b-row class="brow">
             <b-col cols="6">
               <img
-                src="@img/18.png"
+                src="@img/18.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
             </b-col>
             <b-col cols="6">
               <img
-                src="@img/19.png"
+                src="@img/19.jpg"
                 class="col-img col-img-full align-top"
                 alt="rbd group"
               />
@@ -555,7 +555,7 @@
         </b-container>
       </div>
 
-      <div class="page-block">
+      <div id="Contact" class="page-block">
         <b-container fluid="xl">
           <ContactUs></ContactUs>
         </b-container>
