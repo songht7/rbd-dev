@@ -24,8 +24,15 @@
                   Shanghai
                 </p>
                 <p class="line-lg"></p>
-                <p class="line-lg">Cell Phone: +86-18602974630</p>
-                <p class="line-lg">Email:xin.lv@rbdgroup.com.cn</p>
+                <p class="line-lg">
+                  Cell Phone: <a href="tel:+86-18602974630">+86-18602974630</a>
+                </p>
+                <p class="line-lg">
+                  Email:
+                  <a href="mailto:xin.lv@rbdgroup.com.cn">
+                    xin.lv@rbdgroup.com.cn
+                  </a>
+                </p>
               </div>
             </template>
           </b-jumbotron>
