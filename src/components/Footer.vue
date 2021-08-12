@@ -5,14 +5,14 @@
         <!-- <template v-slot:header>BootstrapVue</template> -->
 
         <template v-slot:lead>
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
+          <div class="page-block copyright">
+            <a href="http://www.beian.miit.gov.cn" target="_blank"
+              ><img src="@img/national.png" /> 沪ICP备19019514号-1</a
+            >
+          </div>
         </template>
 
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
+        <p></p>
       </b-jumbotron>
     </b-container>
   </div>
@@ -36,8 +36,8 @@ export default {
 };
 </script>
 <style scoped>
-#Footer-box{
-	background: #efefef;
-	padding: 50px 0;
+#Footer-box {
+  background: #efefef;
+  padding: 50px 0;
 }
 </style>

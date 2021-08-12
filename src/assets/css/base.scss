@@ -42,3 +42,12 @@
 .line-lg {
   padding-bottom: 0.5rem;
 }
+.btn-box {
+  position: relative;
+}
+.alert-block {
+  position: absolute;
+  top:-150%;
+  left: 0;
+  width: 100%;
+}

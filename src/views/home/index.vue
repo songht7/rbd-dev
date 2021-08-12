@@ -555,40 +555,7 @@
 
       <div class="page-block">
         <b-container fluid="xl">
-          <div class="form-box">
-            <b-row class="my-1">
-              <b-col>
-                <b-form-input
-                  id="type-text"
-                  type="text"
-                  placeholder="Enter your name"
-                ></b-form-input>
-              </b-col>
-            </b-row>
-            <b-row class="my-1">
-              <b-col>
-                <b-form-input
-                  id="type-number"
-                  type="number"
-                  placeholder="Enter your phone number"
-                ></b-form-input>
-              </b-col>
-            </b-row>
-            <b-row class="my-1">
-              <b-col>
-                <b-form-input
-                  id="type-email"
-                  type="email"
-                  placeholder="Enter your email"
-                ></b-form-input>
-              </b-col>
-            </b-row>
-            <b-row class="my-1">
-              <b-col>
-                <b-button variant="primary">Primary</b-button>
-              </b-col>
-            </b-row>
-          </div>
+          <ContactUs></ContactUs>
         </b-container>
       </div>
     </div>
@@ -597,12 +564,16 @@
 </template>
 
 <script>
+import ContactUs from "@/components/ContactUs";
 export default {
   data() {
     return {
       slide: 0,
       sliding: null,
     };
+  },
+  components: {
+    ContactUs,
   },
   methods: {
     onSlideStart(slide) {
