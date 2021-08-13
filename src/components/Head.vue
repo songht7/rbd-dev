@@ -5,12 +5,12 @@
         <b-navbar type="light" variant="faded" fixed="top" :sticky="sticky">
           <b-container fluid="xl">
             <b-navbar-nav>
-              <b-nav-item class="active" href="#Home">Home</b-nav-item>
-              <b-nav-item href="#Services">Services</b-nav-item>
-              <b-nav-item href="#Promise">Promise</b-nav-item>
-              <b-nav-item href="#Flow">Flow</b-nav-item>
-              <b-nav-item href="#Contact">ContactUs</b-nav-item>
-              <!-- Navbar dropdowns -->
+              <b-nav-item class="active" href="/#About">About RBD</b-nav-item>
+              <!-- <b-nav-item href="#Industry">Our Industry</b-nav-item> -->
+              <b-nav-item href="/services">Our Services</b-nav-item>
+              <b-nav-item href="/#Integrity">Integrity & Safety</b-nav-item>
+              <b-nav-item href="/#Flow">Working Flow</b-nav-item>
+              <b-nav-item href="/#Contact">Contact Us</b-nav-item>
             </b-navbar-nav>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-navbar-brand href="/">

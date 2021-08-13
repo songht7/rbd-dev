@@ -52,7 +52,21 @@
   left: 0;
   width: 100%;
 }
-
+.sec-box{
+  position: relative;
+}
+#Section-nav{
+  position: fixed;
+  top: 8rem;
+  width: inherit;
+}
+#Section-nav .nav-link{
+  display: inline-block;
+  padding: 0;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: #666;
+}
 // @media (min-width: 812px) {
 @media (min-width: 812px) and (max-width: 1024px) {
   .navbar-box {
