@@ -5,34 +5,6 @@
       <div class="page-block block-bg">
         <b-container fluid="xl">
           <b-row>
-            <b-col class="sec-box" cols="2">
-              <b-nav id="Section-nav" vertical>
-                <b-nav-item href="#SAFA">
-                  SA/FA - Supplier Audit/Factory Audit On-site
-                </b-nav-item>
-                <b-nav-item href="#Auditor">
-                  Auditor visit supplier face to face
-                </b-nav-item>
-                <b-nav-item href="#IPC">
-                  IPC: Initial production check
-                </b-nav-item>
-                <b-nav-item href="#DPI">
-                  DPI: During production inspection
-                </b-nav-item>
-                <b-nav-item href="#FRI">
-                  FRI: Final random inspection
-                </b-nav-item>
-                <b-nav-item href="#PSI">
-                  PSI - Pre-shipping Inspection
-                </b-nav-item>
-                <b-nav-item href="#CLI">
-                  CLI-Container Loading Check
-                </b-nav-item>
-                <b-nav-item href="#Supply">
-                  Supply Chain Consulting Services
-                </b-nav-item>
-              </b-nav>
-            </b-col>
             <b-col cols="10">
               <b-row class="brow">
                 <b-jumbotron>
@@ -410,6 +382,34 @@
                   </template>
                 </b-jumbotron>
               </b-row>
+            </b-col>
+            <b-col class="sec-box" cols="2">
+              <b-nav id="Section-nav" vertical>
+                <b-nav-item href="#SAFA">
+                  SA/FA - Supplier Audit/Factory Audit On-site
+                </b-nav-item>
+                <b-nav-item href="#Auditor">
+                  Auditor visit supplier face to face
+                </b-nav-item>
+                <b-nav-item href="#IPC">
+                  IPC: Initial production check
+                </b-nav-item>
+                <b-nav-item href="#DPI">
+                  DPI: During production inspection
+                </b-nav-item>
+                <b-nav-item href="#FRI">
+                  FRI: Final random inspection
+                </b-nav-item>
+                <b-nav-item href="#PSI">
+                  PSI - Pre-shipping Inspection
+                </b-nav-item>
+                <b-nav-item href="#CLI">
+                  CLI-Container Loading Check
+                </b-nav-item>
+                <b-nav-item href="#Supply">
+                  Supply Chain Consulting Services
+                </b-nav-item>
+              </b-nav>
             </b-col>
           </b-row>
         </b-container>
