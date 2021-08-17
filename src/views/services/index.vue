@@ -2,7 +2,7 @@
   <div id="Page-main">
     <Head></Head>
     <div id="Page-container">
-      <div class="page-block block-bg">
+      <div class="page-block">
         <b-container fluid="xl">
           <b-row>
             <b-col cols="10">
