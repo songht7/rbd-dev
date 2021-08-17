@@ -61,7 +61,7 @@
         </b-container>
       </div>
 
-      <div class="page-block block-bg">
+      <div class="page-block block-bg" id="About">
         <b-container fluid="xl">
           <b-row class="brow">
             <b-jumbotron>

@@ -20,7 +20,7 @@
             <b-navbar-nav class="nav-bar-main">
               <b-nav-item class="nav-btn" href="/#About">About RBD</b-nav-item>
               <!-- <b-nav-item href="#Industry">Our Industry</b-nav-item> -->
-              <b-nav-item class="nav-btn" href="/services"
+              <b-nav-item class="nav-btn" href="/#/services"
                 >Our Services</b-nav-item
               >
               <b-nav-item class="nav-btn" href="/#Integrity"

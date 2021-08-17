@@ -9,8 +9,8 @@ import Login from "./modules/login";
 import auit from "./modules/auit";
 
 export default new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
+  // mode: "history",
+  // base: process.env.BASE_URL,
   routes: [
     {
       path: "*",
@@ -39,6 +39,6 @@ export default new Router({
       component: () => import('@/views/services/index'),
     },
     // Login,
-    // ...auit
+    ...auit
   ],
 });
