@@ -10,14 +10,14 @@
             <template v-slot:lead>
               <div class="temp-row">
                 <p>
-                  WuXi Address:
+                  <b-icon icon="map" font-scale="0.8"></b-icon> WuXi Address:
                 </p>
                 <p class="line-lg">
                   401room, building1, xingzhou business park, 89 xingchuang four
                   road, new sitrict, WuXi city, Jiangsu Province
                 </p>
                 <p>
-                  Shanghai Address:
+                  <b-icon icon="map" font-scale="0.8"></b-icon> Shanghai Address:
                 </p>
                 <p class="line-lg">
                   15th floor, building 1, enterprise world, 222 hubin road,
@@ -25,10 +25,11 @@
                 </p>
                 <p class="line-lg"></p>
                 <p class="line-lg">
-                  Cell Phone: <a href="tel:+86-18602974630">+86-18602974630</a>
+                  <b-icon icon="phone" font-scale="1"></b-icon> Cell Phone:
+                  <a href="tel:+86-18602974630">+86-18602974630</a>
                 </p>
                 <p class="line-lg">
-                  Email:
+                  <b-icon icon="envelope" font-scale="1"></b-icon> Email:
                   <a href="mailto:xin.lv@rbdgroup.com.cn">
                     xin.lv@rbdgroup.com.cn
                   </a>

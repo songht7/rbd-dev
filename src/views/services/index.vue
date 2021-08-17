@@ -384,30 +384,14 @@
               </b-row>
             </b-col>
             <b-col class="sec-box" cols="2">
-              <b-nav id="Section-nav" vertical>
-                <b-nav-item href="#SAFA">
-                  SA/FA - Supplier Audit/Factory Audit On-site
-                </b-nav-item>
-                <b-nav-item href="#Auditor">
-                  Auditor visit supplier face to face
-                </b-nav-item>
-                <b-nav-item href="#IPC">
-                  IPC: Initial production check
-                </b-nav-item>
-                <b-nav-item href="#DPI">
-                  DPI: During production inspection
-                </b-nav-item>
-                <b-nav-item href="#FRI">
-                  FRI: Final random inspection
-                </b-nav-item>
-                <b-nav-item href="#PSI">
-                  PSI - Pre-shipping Inspection
-                </b-nav-item>
-                <b-nav-item href="#CLI">
-                  CLI-Container Loading Check
-                </b-nav-item>
-                <b-nav-item href="#Supply">
-                  Supply Chain Consulting Services
+              <b-nav id="Section-nav" :class="[mobile?'mb-nav':'']" vertical>
+                <b-nav-item
+                  class="sec-nav-item"
+                  :href="`#${obj.id}`"
+                  v-for="(obj, key) in SectionNav"
+                  v-bind:key="key"
+                >
+                  {{ mobile ? obj.cTitle : obj.title }}
                 </b-nav-item>
               </b-nav>
             </b-col>
@@ -428,8 +412,51 @@ export default {
     return {
       slide: 0,
       sliding: null,
+      mobile: false,
       AuditorCols1: 4,
       AuditorCols2: 8,
+      SectionNav: [
+        {
+          id: "SAFA",
+          title: "SA/FA - Supplier Audit/Factory Audit On-site",
+          cTitle: "SA/FA",
+        },
+        {
+          id: "Auditor",
+          title: "Auditor visit supplier face to face",
+          cTitle: "Auditor",
+        },
+        {
+          id: "IPC",
+          title: "IPC: Initial production check",
+          cTitle: "IPC",
+        },
+        {
+          id: "DPI",
+          title: "DPI: During production inspection",
+          cTitle: "DPI",
+        },
+        {
+          id: "FRI",
+          title: "FRI: Final random inspection",
+          cTitle: "FRI",
+        },
+        {
+          id: "PSI",
+          title: "PSI - Pre-shipping Inspection",
+          cTitle: "PSI",
+        },
+        {
+          id: "CLI",
+          title: "CLI-Container Loading Check",
+          cTitle: "CLI",
+        },
+        {
+          id: "Supply",
+          title: "Supply Chain Consulting Services",
+          cTitle: "Supply",
+        },
+      ],
     };
   },
   components: {
@@ -440,10 +467,12 @@ export default {
     var that = this;
     //console.log(md.mobile());
     if (md.mobile()) {
+      that.mobile = true;
       that.cols = 12;
       that.AuditorCols1 = 12;
       that.AuditorCols2 = 12;
     } else {
+      that.mobile = false;
       that.AuditorCols1 = 4;
       that.AuditorCols2 = 8;
     }
