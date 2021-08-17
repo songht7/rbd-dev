@@ -1,7 +1,13 @@
 #Page-main {
   position: relative;
 }
-#Logo{height: 90%;width: auto;max-height: 75px;}
+
+#Logo {
+  height: 90%;
+  width: auto;
+  max-height: 75px;
+}
+
 .navbar-box {
   // position: fixed;
   top: 0;
@@ -13,11 +19,23 @@
   padding-top: 1rem;
   border-bottom: 1px solid #03448d;
 }
+
+// #nav-collapse {
+//   padding: .4rem 0;
+//   border: 1px solid #eee;
+//   border-width: 1px 0 1px 0;
+// }
+
 .nav-bar {
   background-color: #03448d;
   border-bottom: 1px solid #03448d;
   padding: .5rem 3rem;
 }
+
+.nav-btn {
+  padding: 0 .5rem;
+}
+
 .nav-coll {
   padding: 0 2rem;
 }
@@ -25,51 +43,63 @@
 #Page-container {
   padding: 3.8rem 0 0;
 }
+
 .page-block {
   padding: 15px 0;
 }
+
 .block-bg {
   background: #dcdcdc;
 }
+
 .brow {
   padding-bottom: 15px;
   line-height: 1.4;
 }
+
 .temp-row,
 .temp-row p {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.2;
 }
+
 .col-img {
   display: inline;
   width: 100%;
 }
+
 .col-img-full {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
+
 .line-lg {
   padding-bottom: 0.5rem;
 }
+
 .btn-box {
   position: relative;
 }
+
 .alert-block {
   position: absolute;
   top: -150%;
   left: 0;
   width: 100%;
 }
+
 .sec-box {
   position: relative;
 }
+
 #Section-nav {
   position: fixed;
   top: 8rem;
   width: inherit;
 }
+
 #Section-nav .nav-link {
   display: inline-block;
   padding: 0;
@@ -77,9 +107,15 @@
   margin-bottom: 1rem;
   color: #666;
 }
-.mb-nav .sec-nav-item{border-bottom: 1px solid #ccc;margin-bottom: 1rem;padding-left: 1rem;}
-@media (min-width: 812px) {
+
+.mb-nav .sec-nav-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
+
+@media (min-width: 812px) {}
+
 @media (min-width: 812px) and (max-width: 1024px) {
   // .navbar-box {
   //   height: 6rem;
@@ -95,27 +131,34 @@
   .nav-coll {
     padding: 2rem;
   }
+
   .nav-btn {
     line-height: 3;
   }
+
   .navbar-light .navbar-nav .nav-link {
     font-size: 2rem;
   }
+
   .lead,
   .temp-row,
   .temp-row p {
     font-size: 3rem;
     line-height: 1.4;
   }
+
   .brow {
     padding-bottom: 2rem;
   }
+
   .form-control {
     font-size: 2rem;
   }
+
   .btn {
     font-size: 2rem;
   }
+
   // #Contact .temp-row,
   // #Contact .temp-row p {
   //   font-size: 2.4rem;
