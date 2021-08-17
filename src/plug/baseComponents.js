@@ -3,7 +3,7 @@ import {
   IconsPlugin,
   JumbotronPlugin,
   ButtonPlugin,
-  AlertPlugin
+  AlertPlugin,
 } from "bootstrap-vue";
 
 export default {

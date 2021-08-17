@@ -3,37 +3,40 @@
     <Head></Head>
     <div id="Page-container">
       <div id="Home" class="page-block">
+        <!-- <b-row class="brow">
+          <swiper-slide></swiper-slide>
+        </b-row> -->
         <b-container fluid="xl">
-        <div class="silde-box">
-          <b-carousel
-            id="carousel-1"
-            v-model="slide"
-            :interval="4000"
-            fade
-            controls
-            indicators
-            background="#ababab"
-            img-width="800"
-            img-height="400"
-            style="text-shadow: 1px 1px 2px #333"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
-          >
-            <b-carousel-slide
-              caption=""
-              text=""
-              img-src="http://www.jobpgroup.com/img/1.jpg"
-            ></b-carousel-slide>
+          <div class="silde-box">
+            <b-carousel
+              id="carousel-1"
+              v-model="slide"
+              :interval="4000"
+              fade
+              controls
+              indicators
+              background="#ababab"
+              img-width="800"
+              img-height="400"
+              style="text-shadow: 1px 1px 2px #333"
+              @sliding-start="onSlideStart"
+              @sliding-end="onSlideEnd"
+            >
+              <b-carousel-slide
+                caption=""
+                text=""
+                img-src="http://www.jobpgroup.com/img/1.jpg"
+              ></b-carousel-slide>
 
-            <b-carousel-slide img-src="http://www.jobpgroup.com/img/2.jpg">
-              <h1></h1>
-            </b-carousel-slide>
+              <b-carousel-slide img-src="http://www.jobpgroup.com/img/2.jpg">
+                <h1></h1>
+              </b-carousel-slide>
 
-            <b-carousel-slide
-              img-src="http://www.jobpgroup.com/img/3.jpg"
-            ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="http://www.jobpgroup.com/img/3.jpg"
+              ></b-carousel-slide>
 
-            <!-- <b-carousel-slide>
+              <!-- <b-carousel-slide>
               <template v-slot:img>
                 <img
                   class="d-block img-fluid w-100"
@@ -45,7 +48,7 @@
               </template>
             </b-carousel-slide> -->
 
-            <!-- <b-carousel-slide
+              <!-- <b-carousel-slide
               caption="Blank Image"
               img-blank
               img-alt="Blank image"
@@ -56,8 +59,8 @@
                 vel est. Ut pellentesque ut lacus vel interdum.
               </p>
             </b-carousel-slide> -->
-          </b-carousel>
-        </div>
+            </b-carousel>
+          </div>
         </b-container>
       </div>
 
@@ -130,29 +133,29 @@
               </template>
             </b-jumbotron>
           </b-row>
-              <b-row class="brow">
-                <b-col cols="4">
-                  <img
-                    src="@img/23.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/20.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/22.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-              </b-row>
+          <b-row class="brow">
+            <b-col cols="4">
+              <img
+                src="@img/23.jpg"
+                class="col-img col-img-full align-top"
+                alt="rbd group"
+              />
+            </b-col>
+            <b-col cols="4">
+              <img
+                src="@img/20.jpg"
+                class="col-img col-img-full align-top"
+                alt="rbd group"
+              />
+            </b-col>
+            <b-col cols="4">
+              <img
+                src="@img/22.jpg"
+                class="col-img col-img-full align-top"
+                alt="rbd group"
+              />
+            </b-col>
+          </b-row>
         </b-container>
       </div>
 
@@ -266,7 +269,7 @@
                       <p>
                         _____________________________________________________________________
                       </p>
-                      <p  class="line-lg">
+                      <p class="line-lg">
                         _____________________________________________________________________
                       </p>
                       <p>
@@ -326,6 +329,7 @@
 </template>
 
 <script>
+import SwiperSlide from "@/components/swiper-slide/SwiperSlide";
 import ContactUs from "@/components/ContactUs";
 var MobileDetect = require("mobile-detect"),
   md = new MobileDetect(navigator.userAgent);
@@ -340,6 +344,7 @@ export default {
   },
   components: {
     ContactUs,
+    SwiperSlide,
   },
   mounted() {
     // this.getAuthority();
@@ -360,6 +365,12 @@ export default {
     },
     onSlideEnd(slide) {
       this.sliding = false;
+    },
+    onSwiper(swiper) {
+      console.log(swiper);
+    },
+    onSlideChange() {
+      console.log("slide change");
     },
   },
 };

@@ -1,13 +1,19 @@
 import "@babel/polyfill"; // 兼容IE
 import Vue from "vue";
 import baseComponents from "@/plug/baseComponents"; //获取公共组件
-import "viewerjs/dist/viewer.css";
 
+import "viewerjs/dist/viewer.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import "@/assets/css/normalize.css";
 import "@/assets/css/init.scss";
+
+
+import 'swiper/swiper-bundle.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+Vue.use(VueAwesomeSwiper)
+
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
