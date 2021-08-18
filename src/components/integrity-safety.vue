@@ -82,6 +82,7 @@
                   immediately report to Shane Lyu, at (+86) 186 0297 4630 or
                   email to xin.lv@RBDgroup.com.cn
                 </p>
+                <p> &nbsp; </p>
               </b-container>
               <div class="temp-block  block-bg">
                 <b-container fluid="xl">
@@ -108,6 +109,7 @@
                 </b-container>
               </div>
               <b-container fluid="xl">
+                <p> &nbsp; </p>
                 <p class="line-lg">
                   Where risks have been identified, proposed safety controls
                   should be listed below (e.g. Staff to wear high visibility
