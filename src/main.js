@@ -9,9 +9,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import "@/assets/css/normalize.css";
 import "@/assets/css/init.scss";
 
-
-import 'swiper/swiper-bundle.css'
-import VueAwesomeSwiper from 'vue-awesome-swiper';
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
 import App from "./App.vue";

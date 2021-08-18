@@ -3,9 +3,6 @@
     <Head></Head>
     <div id="Page-container">
       <div id="Home" class="page-block">
-        <!-- <b-row class="brow">
-          <swiper-slide></swiper-slide>
-        </b-row> -->
         <div class="silde-box">
           <carousel-slide></carousel-slide>
         </div>
@@ -39,12 +36,9 @@
           </b-row> -->
         </b-container>
       </div>
-      <div row class="img-full">
-          <img
-            src="@img/slide01.jpg"
-            class="col-img col-img-full align-top"
-            alt="rbd group"
-          />
+
+      <div>
+        <swiper-slide></swiper-slide>
       </div>
       <!-- block-bg -->
       <div class="page-block " id="Integrity">
@@ -54,11 +48,11 @@
       </div>
 
       <div row class="img-full">
-          <img
-            src="@img/p3.jpg"
-            class="col-img col-img-full align-top"
-            alt="rbd group"
-          />
+        <img
+          src="@img/p3.jpg"
+          class="col-img col-img-full align-top"
+          alt="rbd group"
+        />
       </div>
       <div class="page-block" id="Flow">
         <b-container fluid="xl">

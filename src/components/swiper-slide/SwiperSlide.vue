@@ -1,38 +1,55 @@
 <template>
-  <div id="SwiperSilde">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#"><img :src="swiperOption.imgp1"/></a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"><img :src="swiperOption.imgp2"/></a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"><img :src="swiperOption.imgp3"/></a>
-        </div>
+  <div v-swiper:mySwiper="swiperOption">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" :key="banner" v-for="banner in banners">
+        <div
+          class="slide-img"
+          :style="{ backgroundImage: `url(${banner})` }"
+        ></div>
       </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
+    <div
+      class="swiper-pagination"
+      :style="{ backgroundImage: `url(${pagBg})` }"
+    ></div>
+    <div class="swiper-scrollbar" slot="scrollbar"></div>
   </div>
 </template>
 
 <script>
-import Swiper, { Pagination, Navigation, Autoplay } from "swiper";
-Swiper.use([Pagination, Navigation, Autoplay]);
-
+var img1 = require("@img/slide01.jpg"),
+  img2 = require("@img/slide02.jpg"),
+  img3 = require("@img/slide03.jpg"),
+  img4 = require("@img/slide04.jpg");
+var pagination = require("@img/pagination.jpg");
 export default {
   name: "SwiperSilde",
   props: [],
   data() {
     return {
       swiperOption: {
-        imgp1: "http://www.jobpgroup.com/img/1.jpg",
-        imgp2: "http://www.jobpgroup.com/img/1.jpg",
-        imgp3: "http://www.jobpgroup.com/img/1.jpg",
+        direction: "vertical",
+        // loop: true,
+        // dynamicBullets: true,
+        // dynamicMainBullets: 1,
+        pagination: ".swiper-pagination",
+        scrollbar: ".swiper-scrollbar",
+        watchSlidesProgress: true,
+        autoplay: 3000,
+        speed: 600,
+
+        // pagination2: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        //   currentClass: "my-pagination-current",
+        //   type: "bullets",
+        //   renderBullet: function(index, className) {
+        //     return '<span class="' + className + '">' + (index + 1) + "</span>";
+        //   },
+        // },
       },
+      pagBg: pagination,
+      banners: [img1, img2, img3, img4],
     };
   },
 
@@ -40,120 +57,47 @@ export default {
 
   computed: {},
   mounted() {
-    var mySwiper = new Swiper(".swiper-container", {
-      loop: true,
-      slidesPerView: 3,
-      autoplay: true,
-      //修改swiper的父元素时，自动初始化swiper
-      observer: true,
-      //修改swiper自己或子元素时，自动初始化swiper
-      observeParents: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    //鼠标移入停止轮播
-    mySwiper.el.onmouseover = function() {
-      mySwiper.autoplay.stop();
-    };
-    //鼠标移出开始轮播
-    mySwiper.el.onmouseout = function() {
-      mySwiper.autoplay.start();
-    };
+    console.log("Current Swiper instance object", this.mySwiper);
+    // this.mySwiper.slideTo(3, 1000, false);
   },
   methods: {},
 };
 </script>
 <style scoped>
-
-body {
-    background: url(/src/assets/images/bg_slide.png) no-repeat center 20px #fff;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper-container {
-  margin-top: 50px;
-}
-
-.swiper-slide {
-  width: 860px;
-}
-
-.swiper-slide a {
-  transition: 0.2s;
-}
-
-.swiper-slide a:hover {
-  opacity: 0.6;
-}
-
-.swiper-pagination {
-  text-align: center;
+.swiper-wrapper {
   width: 100%;
-  margin-top: 10px;
+  height: calc(100vw / 3);
+  position: relative;
 }
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background: #02328d;
-}
-
-.swiper-button-prev {
-  width: 50%;
-  height: 360px;
-  left: -450px;
-  top: 0;
-  background: url(/src/assets/images/ichimatsu.png) repeat 0 0;
-  border-radius: 5px;
-  margin-top: 0;
-  z-index: 99;
-  transition: 0.2s;
-}
-
-.swiper-button-prev:before {
-  content: "";
-  position: absolute;
-  width: 15px;
+.slide-img {
+  margin-left: 30%;
+  width: 70%;
   height: 100%;
-  background: url(/src/assets/images/slide_prev.png) no-repeat 0 center;
-  left: 94%;
-  top: 50%;
-  margin-top: -180px;
+  background-color: #eee;
+  background-image: none;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.swiper-button-next {
-  width: 50%;
-  height: 360px;
-  right: -450px;
-  top: 0;
-  background: url(/src/assets/images/ichimatsu.png) repeat 0 0;
-  border-radius: 5px;
-  margin-top: 0;
-  z-index: 99;
-  transition: 0.2s;
-}
-
-.swiper-button-next:after {
-  content: "";
+.swiper-pagination {
+  left: 0;
   position: absolute;
-  width: 15px;
+  width: 30%;
   height: 100%;
-  background: url(/src/assets/images/slide_prev.png) no-repeat 0 center;
-  right: 94%;
-  top: 50%;
-  margin-top: -180px;
-  transform: rotate(180deg);
+  background-image: url("/src/assets/images/pagination.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
 }
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  opacity: 0.6;
+.swiper-container-vertical > .swiper-scrollbar{
+  left: 3px;
+  width: 30%;
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
+  width: 10px;
+  border-radius: 0;
+}
+.swiper-pagination-bullet-active {
+  width: 30px;
 }
 </style>
