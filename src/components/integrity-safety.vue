@@ -45,22 +45,20 @@
             <div class="temp-row">
               <b-container fluid="xl">
                 <p>INTEGRITY</p>
-                <p>
+                <p class="line-lg">
                   In order to ensure our reliable & professional services to be
                   delivered to the clients, all suppliers and factories should
                   understand and support that the following policies are being
                   enforced in our team:
                 </p>
-                <p>●</p>
-                <p>
+                <p class="line-lg icon-block">
                   All our employees are forbidden to ask for or accept tips,
                   presents, rebate or entertainment of any kinds. All
                   inspector’s and auditor’s expense such as transportation cost,
                   hotel accommodation are reimbursed by RBD Technical Service
                   Limited directly.
                 </p>
-                <p>●</p>
-                <p class="line-lg">
+                <p class="line-lg icon-block">
                   Any attempts of bribery to the inspectors / auditors by any
                   person of the manufacturing factory or a member of management
                   will be reported and the clients will be informed by our
@@ -70,19 +68,18 @@
                   any cost incurred and the loss of business caused to RBD.
                 </p>
 
-                <p class="line-lg">
+                <p class="line-lg icon-block">
                   Any kind of violation of privacy or intimidation against the
                   inspectors / auditors will be reported and the clients will be
                   informed immediately.
                 </p>
-                <p>●</p>
 
-                <p class="line-lg">
+                <p class="line-lg icon-block">
                   Should any RBD employee violate this policy, please
                   immediately report to Shane Lyu, at (+86) 186 0297 4630 or
                   email to xin.lv@RBDgroup.com.cn
                 </p>
-                <p> &nbsp; </p>
+                <p>&nbsp;</p>
               </b-container>
               <div class="temp-block  block-bg">
                 <b-container fluid="xl">
@@ -109,18 +106,14 @@
                 </b-container>
               </div>
               <b-container fluid="xl">
-                <p> &nbsp; </p>
+                <p>&nbsp;</p>
                 <p class="line-lg">
                   Where risks have been identified, proposed safety controls
                   should be listed below (e.g. Staff to wear high visibility
                   clothes where a traffic hazard exists):
                 </p>
-                <p>
-                  _____________________________________________________________________
-                </p>
-                <p class="line-lg">
-                  _____________________________________________________________________
-                </p>
+                <p class="p-line"></p>
+                <p class="p-line line-lg"></p>
                 <p>
                   NOTE: Where either the client or the inspector/auditor feels
                   that the unacceptable potential safety risks associated with

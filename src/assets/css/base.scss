@@ -58,12 +58,16 @@
 }
 
 .temp-row,
+.temp-row div,
+.temp-row a,
 .temp-row p {
+  color: rgb(33, 37, 41);
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.2;
 }
-.temp-block{
+
+.temp-block {
   padding: 1rem 0;
 }
 
@@ -117,6 +121,56 @@
   padding-left: 1rem;
 }
 
+.p-line {
+  display: block;
+  height: 2rem;
+  border-bottom: 1px solid #666;
+  width: 100%;
+}
+
+.rbd-input,
+.rbd-btn {
+  border-radius: 2rem;
+}
+
+.rbd-textarea {
+  border-radius: 1rem;
+}
+
+/*icon*/
+.icon-block {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.icon-block::before {
+  content: "●";
+  color: #333;
+  width: 1rem;
+  height: 1.5rem;
+  background-image: none;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+}
+
+.icon-location::before {
+  content: " ";
+  background-image: url(../images/icon/location.png);
+}
+
+.icon-phone::before {
+  content: " ";
+  background-image: url(../images/icon/cell.png);
+}
+
+.icon-email::before {
+  content: " ";
+  background-image: url(../images/icon/email.png);
+}
+
 @media (min-width: 812px) {}
 
 @media (min-width: 812px) and (max-width: 1024px) {
@@ -145,6 +199,8 @@
 
   .lead,
   .temp-row,
+  .temp-row div,
+  .temp-row a,
   .temp-row p {
     font-size: 3rem;
     line-height: 1.4;
@@ -170,5 +226,15 @@
   #Section-nav .nav-link {
     font-size: 2rem;
     line-height: 1.2;
+  }
+
+  .icon-block {
+    padding-left: 3.5rem;
+  }
+
+  .icon-block::before {
+    width: 3rem;
+    height: 3.5rem;
+    top: .5rem;
   }
 }

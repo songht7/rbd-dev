@@ -58,7 +58,7 @@
       <b-row class="img-full">
         <b-col>
           <img
-            src="@img/p1.jpg"
+            src="@img/p3.jpg"
             class="col-img col-img-full align-top"
             alt="rbd group"
           />
@@ -72,7 +72,7 @@
         </b-container>
       </div>
 
-      <b-row class="img-full">
+      <!-- <b-row class="img-full">
         <b-col>
           <img
             src="@img/p2.jpg"
@@ -80,8 +80,8 @@
             alt="rbd group"
           />
         </b-col>
-      </b-row>
-      <div id="Contact" class="page-block">
+      </b-row> -->
+      <div id="Contact" class="page-block block-bg">
         <b-container fluid="xl">
           <ContactUs></ContactUs>
         </b-container>

@@ -3,40 +3,62 @@
     <b-container class="bv-example-row">
       <b-row>
         <b-col :cols="ContactCols">
-          <b-jumbotron>
-            <template v-slot:header>
-              Contact Us
-            </template>
-            <template v-slot:lead>
-              <div class="temp-row">
-                <p>
-                  <b-icon icon="map" font-scale="0.8"></b-icon> WuXi Address:
-                </p>
-                <p class="line-lg">
+          <b-row>
+            <b-jumbotron>
+              <template v-slot:header>
+                Contact Us
+              </template>
+            </b-jumbotron>
+          </b-row>
+          <b-row>
+            <div class="temp-row">
+              <b-row class="line-lg">
+                <b-col :cols="addressRow.r1">
+                  <div class="icon-block icon-location">
+                    Address:
+                  </div>
+                </b-col>
+                <b-col :cols="addressRow.r2">
                   401room, building1, xingzhou business park, 89 xingchuang four
                   road, new sitrict, WuXi city, Jiangsu Province
-                </p>
-                <p>
-                  <b-icon icon="map" font-scale="0.8"></b-icon> Shanghai Address:
-                </p>
-                <p class="line-lg">
+                </b-col>
+              </b-row>
+              <b-row class="line-lg">
+                <b-col :cols="addressRow.r1">
+                  <div class="icon-block icon-location">
+                    Address:
+                  </div>
+                </b-col>
+                <b-col :cols="addressRow.r2">
                   15th floor, building 1, enterprise world, 222 hubin road,
                   Shanghai
-                </p>
-                <p class="line-lg"></p>
-                <p class="line-lg">
-                  <b-icon icon="phone" font-scale="1"></b-icon> Cell Phone:
+                </b-col>
+              </b-row>
+              <p class="line-lg"></p>
+              <b-row class="line-lg">
+                <b-col :cols="addressRow.r1">
+                  <div class="icon-block icon-phone">
+                    Phone:
+                  </div>
+                </b-col>
+                <b-col :cols="addressRow.r2">
                   <a href="tel:+86-18602974630">+86-18602974630</a>
-                </p>
-                <p class="line-lg">
-                  <b-icon icon="envelope" font-scale="1"></b-icon> Email:
+                </b-col>
+              </b-row>
+              <b-row class="line-lg">
+                <b-col :cols="addressRow.r1">
+                  <div class="icon-block icon-email">
+                    Email:
+                  </div>
+                </b-col>
+                <b-col :cols="addressRow.r2">
                   <a href="mailto:xin.lv@rbdgroup.com.cn">
                     xin.lv@rbdgroup.com.cn
                   </a>
-                </p>
-              </div>
-            </template>
-          </b-jumbotron>
+                </b-col>
+              </b-row>
+            </div>
+          </b-row>
         </b-col>
         <!-- <b-col cols="2"> </b-col> -->
         <b-col :cols="ContactCols">
@@ -50,6 +72,7 @@
                   <b-row class="my-3">
                     <b-col>
                       <b-form-input
+                        class="rbd-input"
                         id="type-text"
                         type="text"
                         placeholder="Enter your name"
@@ -60,6 +83,7 @@
                   <b-row class="my-3">
                     <b-col>
                       <b-form-input
+                        class="rbd-input"
                         id="type-number"
                         type="number"
                         placeholder="Enter your phone number"
@@ -70,6 +94,7 @@
                   <b-row class="my-3">
                     <b-col>
                       <b-form-input
+                        class="rbd-input"
                         id="type-email"
                         type="email"
                         placeholder="Enter your email"
@@ -80,11 +105,11 @@
                   <b-row class="my-3">
                     <b-col>
                       <b-form-textarea
+                        class="rbd-textarea"
                         id="mark"
                         v-model="mark"
                         placeholder="Enter something..."
-                        rows="3"
-                        max-rows="6"
+                        size="lg"
                       ></b-form-textarea>
                     </b-col>
                   </b-row>
@@ -100,6 +125,7 @@
                           {{ variantVal }}
                         </b-alert>
                         <b-button
+                          class="rbd-btn"
                           :block="block"
                           variant="primary"
                           style="width:100%"
@@ -129,6 +155,10 @@ export default {
   data() {
     return {
       ContactCols: 6,
+      addressRow: {
+        r1: 3,
+        r2: 9,
+      },
       block: true,
       name: "",
       phone: "",
@@ -156,8 +186,16 @@ export default {
     //console.log(md.mobile());
     if (md.mobile()) {
       that.ContactCols = 12;
+      that.addressRow = {
+        r1: 12,
+        r2: 12,
+      };
     } else {
       that.ContactCols = 6;
+      that.addressRow = {
+        r1: 3,
+        r2: 9,
+      };
     }
   },
   methods: {
