@@ -1,8 +1,7 @@
 <template>
   <div>
     <!-- block-bg -->
-    <b-row class="brow">
-      <b-col>
+    <div class="brow">
         <b-jumbotron>
           <template v-slot:lead>
             <div class="temp-row block-bg">
@@ -31,10 +30,8 @@
             </div>
           </template>
         </b-jumbotron>
-      </b-col>
-    </b-row>
-    <b-row class="brow">
-      <b-col>
+      </div>
+    <div class="brow">
         <!-- <img
                   src="@img/g.png"
                   class="col-img col-img-full align-top"
@@ -125,8 +122,7 @@
             </div>
           </template>
         </b-jumbotron>
-      </b-col>
-    </b-row>
+      </div>
   </div>
 </template>
 

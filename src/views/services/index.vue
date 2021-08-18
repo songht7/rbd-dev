@@ -96,15 +96,13 @@
             </b-col>
           </b-row>
         </b-container>
-        <b-row class="brow img-full">
-          <b-col>
-            <img
-              src="@img/p1.jpg"
-              class="col-img col-img-full align-top"
-              alt="rbd group"
-            />
-          </b-col>
-        </b-row>
+        <div class="brow img-full">
+          <img
+            src="@img/p1.jpg"
+            class="col-img col-img-full align-top"
+            alt="rbd group"
+          />
+        </div>
         <b-container fluid="xl">
           <b-row>
             <b-col cols="10">
@@ -206,15 +204,13 @@
             </b-col>
           </b-row>
         </b-container>
-        <b-row class="brow img-full">
-          <b-col>
-            <img
-              src="@img/p2.jpg"
-              class="col-img col-img-full align-top"
-              alt="rbd group"
-            />
-          </b-col>
-        </b-row>
+        <div class="brow img-full">
+          <img
+            src="@img/p2.jpg"
+            class="col-img col-img-full align-top"
+            alt="rbd group"
+          />
+        </div>
         <b-container fluid="xl">
           <b-row>
             <b-col cols="10">

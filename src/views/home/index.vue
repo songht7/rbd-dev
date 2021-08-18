@@ -39,15 +39,13 @@
           </b-row> -->
         </b-container>
       </div>
-      <b-row class="img-full">
-        <b-col>
+      <div row class="img-full">
           <img
             src="@img/slide01.jpg"
             class="col-img col-img-full align-top"
             alt="rbd group"
           />
-        </b-col>
-      </b-row>
+      </div>
       <!-- block-bg -->
       <div class="page-block " id="Integrity">
         <div class="form-box">
@@ -55,15 +53,13 @@
         </div>
       </div>
 
-      <b-row class="img-full">
-        <b-col>
+      <div row class="img-full">
           <img
             src="@img/p3.jpg"
             class="col-img col-img-full align-top"
             alt="rbd group"
           />
-        </b-col>
-      </b-row>
+      </div>
       <div class="page-block" id="Flow">
         <b-container fluid="xl">
           <div class="form-box">
