@@ -72,15 +72,6 @@
         </b-container>
       </div>
 
-      <!-- <b-row class="img-full">
-        <b-col>
-          <img
-            src="@img/p2.jpg"
-            class="col-img col-img-full align-top"
-            alt="rbd group"
-          />
-        </b-col>
-      </b-row> -->
       <div id="Contact" class="page-block block-bg">
         <b-container fluid="xl">
           <ContactUs></ContactUs>

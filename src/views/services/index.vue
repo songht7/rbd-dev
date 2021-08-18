@@ -3,47 +3,33 @@
     <Head></Head>
     <div id="Page-container">
       <div class="page-block">
-        <b-container fluid="xl">
-          <b-row>
-            <b-col cols="10">
-              <b-row class="brow">
+        <div class="brow block-bg">
+          <b-container fluid="xl">
+            <b-row>
+              <b-col cols="10">
                 <b-jumbotron>
                   <template v-slot:header
                     >RBD can provide TPI services in China and Southeast Asia,
                     as follow:
                   </template>
                 </b-jumbotron>
-              </b-row>
+              </b-col>
+              <b-col cols="2"> </b-col>
+            </b-row>
+          </b-container>
+        </div>
 
+        <b-container fluid="xl">
+          <b-row>
+            <b-col cols="10">
               <b-row id="SAFA" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>SA/FA - Supplier Audit/Factory Audit On-site:</p>
+                    <p class="ser-title">
+                      SA/FA - Supplier Audit/Factory Audit On-site:
+                    </p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="4">
-                  <img
-                    src="@img/1.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/2.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/3.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -68,19 +54,14 @@
               <b-row id="Auditor" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>Auditor visit supplier face to face:</p>
+                    <p class="ser-title">
+                      Auditor visit supplier face to face:
+                    </p>
                   </template>
                 </b-jumbotron>
               </b-row>
               <b-row class="brow">
-                <b-col :cols="AuditorCols1">
-                  <img
-                    src="@img/4.jpg"
-                    class="col-img align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col :cols="AuditorCols2">
+                <b-col>
                   <b-jumbotron>
                     <template v-slot:lead>
                       <div class="temp-row">
@@ -112,29 +93,27 @@
                   </b-jumbotron>
                 </b-col>
               </b-row>
-
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-row class="brow img-full">
+          <b-col>
+            <img
+              src="@img/p1.jpg"
+              class="col-img col-img-full align-top"
+              alt="rbd group"
+            />
+          </b-col>
+        </b-row>
+        <b-container fluid="xl">
+          <b-row>
+            <b-col cols="10">
               <b-row id="IPC" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>IPC  Initial production check:</p>
+                    <p class="ser-title">IPC  Initial production check:</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="6">
-                  <img
-                    src="@img/5.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="6">
-                  <img
-                    src="@img/6.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -156,32 +135,9 @@
               <b-row id="DPI" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>DPI: During production inspection</p>
+                    <p class="ser-title">DPI: During production inspection</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="4">
-                  <img
-                    src="@img/7.jpg"
-                    class="col-img align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/8.jpg"
-                    class="col-img align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="4">
-                  <img
-                    src="@img/9.jpg"
-                    class="col-img align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -200,39 +156,9 @@
               <b-row id="FRI" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>FRI: Final random inspection</p>
+                    <p class="ser-title">FRI: Final random inspection</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="3">
-                  <img
-                    src="@img/10.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="3">
-                  <img
-                    src="@img/11.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="3">
-                  <img
-                    src="@img/12.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="3">
-                  <img
-                    src="@img/13.jpg"
-                    class="col-img col-img-full  align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -250,25 +176,9 @@
               <b-row id="PSI" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>PSI -Pre-shipping Inspection:</p>
+                    <p class="ser-title">PSI -Pre-shipping Inspection:</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="6">
-                  <img
-                    src="@img/14.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="6">
-                  <img
-                    src="@img/15.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -293,29 +203,27 @@
                   </template>
                 </b-jumbotron>
               </b-row>
-
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-row class="brow img-full">
+          <b-col>
+            <img
+              src="@img/p2.jpg"
+              class="col-img col-img-full align-top"
+              alt="rbd group"
+            />
+          </b-col>
+        </b-row>
+        <b-container fluid="xl">
+          <b-row>
+            <b-col cols="10">
               <b-row id="CLI" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>CLI-Container Loading Check:</p>
+                    <p class="ser-title">CLI-Container Loading Check:</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="6">
-                  <img
-                    src="@img/16.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="6">
-                  <img
-                    src="@img/17.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -349,25 +257,9 @@
               <b-row id="Supply" class="brow">
                 <b-jumbotron>
                   <template v-slot:lead>
-                    <p>Supply Chain Consulting Services:</p>
+                    <p class="ser-title">Supply Chain Consulting Services:</p>
                   </template>
                 </b-jumbotron>
-              </b-row>
-              <b-row class="brow">
-                <b-col cols="6">
-                  <img
-                    src="@img/18.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
-                <b-col cols="6">
-                  <img
-                    src="@img/19.jpg"
-                    class="col-img col-img-full align-top"
-                    alt="rbd group"
-                  />
-                </b-col>
               </b-row>
               <b-row class="brow">
                 <b-jumbotron>
@@ -384,7 +276,11 @@
               </b-row>
             </b-col>
             <b-col class="sec-box" cols="2">
-              <b-nav id="Section-nav" :class="[mobile?'mb-nav':'']" vertical>
+              <b-nav
+                id="Section-nav"
+                :class="[mobile ? 'mb-nav' : '']"
+                vertical
+              >
                 <b-nav-item
                   class="sec-nav-item"
                   :href="`#${obj.id}`"
@@ -488,4 +384,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="css">
+.ser-title {
+  color: #03448d;
+}
+</style>

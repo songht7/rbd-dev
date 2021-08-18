@@ -113,7 +113,8 @@
                   clothes where a traffic hazard exists):
                 </p>
                 <p class="p-line"></p>
-                <p class="p-line line-lg"></p>
+                <p class="p-line"></p>
+                <p>&nbsp;</p>
                 <p>
                   NOTE: Where either the client or the inspector/auditor feels
                   that the unacceptable potential safety risks associated with
