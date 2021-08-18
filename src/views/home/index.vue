@@ -48,12 +48,11 @@
           />
         </b-col>
       </b-row>
-      <div class="page-block block-bg" id="Integrity">
-        <b-container fluid="xl">
-          <div class="form-box">
-            <integrity-safety></integrity-safety>
-          </div>
-        </b-container>
+      <!-- block-bg -->
+      <div class="page-block " id="Integrity">
+        <div class="form-box">
+          <integrity-safety></integrity-safety>
+        </div>
       </div>
 
       <b-row class="img-full">

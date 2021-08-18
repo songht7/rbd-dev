@@ -36,6 +36,11 @@
         text=""
         img-src="http://www.jobpgroup.com/img/3.jpg"
       ></b-carousel-slide>
+      <b-carousel-slide
+        caption=""
+        text=""
+        img-src="http://www.jobpgroup.com/img/4.jpg"
+      ></b-carousel-slide>
       <!-- <b-carousel-slide>
         <template v-slot:img>
           <img
@@ -71,6 +76,7 @@ export default {
       { src: "http://www.jobpgroup.com/img/1.jpg", txt: "", val: "" },
       { src: "http://www.jobpgroup.com/img/2.jpg", txt: "", val: "" },
       { src: "http://www.jobpgroup.com/img/3.jpg", txt: "", val: "" },
+      { src: "http://www.jobpgroup.com/img/4.jpg", txt: "", val: "" },
     ],
   },
   data() {
