@@ -36,6 +36,14 @@
   padding: 0 .5rem;
 }
 
+.navbar-nav .nav-link {
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 20px;
+}
+
 .nav-coll {
   padding: 0 2rem;
 }
@@ -177,6 +185,7 @@
 @media (min-width: 812px) {}
 
 @media (min-width: 812px) and (max-width: 1024px) {
+
   // .navbar-box {
   //   height: 6rem;
   // }
@@ -187,17 +196,33 @@
   //   padding: 0;
   //   line-height: 2.2;
   // }
+  #Logo {
+    max-height: none;
+  }
 
   .nav-coll {
     padding: 2rem;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 3rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 3.5em;
+    height: 3.5em;
   }
 
   .nav-btn {
     line-height: 3;
   }
 
+  .navbar-nav .nav-link {
+    font-size: 50px;
+  }
+
   .navbar-light .navbar-nav .nav-link {
-    font-size: 2rem;
+    font-size: 50px;
   }
 
   .lead,
