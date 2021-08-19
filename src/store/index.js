@@ -5,6 +5,10 @@ Vue.use(Vuex)
 
 const state = {
   loading: false,
+  animated:{
+    animateStyle: "", //动画效果 fadeIn
+    duration: "", //动画持续时间 1s
+  }
 };
 
 const mutations = {

@@ -1,13 +1,19 @@
 <template>
   <div id="Page-main">
     <Head></Head>
-    <div id="Page-container">
+    <div
+      id="Page-container"
+      :class="[
+        'animate__animated',
+        `animate__${$store.state.animated.animateStyle}`,
+        `duration-${$store.state.animated.duration}`,
+      ]"
+    >
       <div id="Home" class="page-block">
         <div class="silde-box">
           <carousel-slide></carousel-slide>
         </div>
       </div>
-
       <div class="page-block" id="About">
         <b-container fluid="xl">
           <about-us></about-us>

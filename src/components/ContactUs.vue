@@ -113,7 +113,7 @@
                       ></b-form-textarea>
                     </b-col>
                   </b-row>
-                  <b-row class="my-2">
+                  <b-row class="my-4">
                     <b-col>
                       <div class="btn-box">
                         <b-alert

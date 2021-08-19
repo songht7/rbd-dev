@@ -182,6 +182,19 @@
   background-image: url(../images/icon/email.png);
 }
 
+/*animate*/
+.animate__animated.duration-1s {
+  animation-duration: 1s;
+}
+
+.animate__animated.duration-3s {
+  animation-duration: 3s;
+}
+
+.animate__animated.duration-5s {
+  animation-duration: 5s;
+}
+
 @media (max-width: 812px) {}
 
 @media (min-width: 812px) and (max-width: 1024px) {
@@ -199,10 +212,12 @@
   #Page-main #Page-container {
     padding-top: 10.5rem;
   }
-  .container-xl{
+
+  .container-xl {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
   #Logo {
     max-height: none;
   }
@@ -245,12 +260,11 @@
     margin-bottom: 2rem;
   }
 
-  .form-control {
-    font-size: 2rem;
-  }
-
+  .form-control,
   .btn {
     font-size: 2rem;
+    line-height: 1.4;
+    padding: 1.5rem;
   }
 
   // #Contact .temp-row,

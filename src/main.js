@@ -8,10 +8,13 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import "@/assets/css/normalize.css";
 import "@/assets/css/init.scss";
+// import "@/assets/css/animate.min.css";
+import animate from "animate.css";
+Vue.use(animate);
 
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
+import VueAwesomeSwiper from "vue-awesome-swiper";
+import "swiper/dist/css/swiper.css";
+Vue.use(VueAwesomeSwiper);
 
 import App from "./App.vue";
 import router from "./router";
