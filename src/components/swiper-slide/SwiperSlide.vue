@@ -32,7 +32,7 @@ export default {
         // loop: true,
         // dynamicBullets: true,
         // dynamicMainBullets: 1,
-        pagination: ".swiper-pagination",
+        // pagination: ".swiper-pagination",
         scrollbar: ".swiper-scrollbar",
         watchSlidesProgress: true,
         autoplay: 3000,
@@ -49,7 +49,12 @@ export default {
         // },
       },
       pagBg: pagination,
-      banners: [img1, img2, img3, img4],
+      banners: [
+        img1, 
+        img2, 
+        img3, 
+        img4
+        ],
     };
   },
 
@@ -81,6 +86,7 @@ export default {
 }
 .swiper-pagination {
   left: 0;
+  top: 0;/*pagination: ".swiper-pagination"*/
   position: absolute;
   width: 30%;
   height: 100%;
@@ -89,11 +95,13 @@ export default {
   background-position: 50% 50%;
   background-size: 100% 100%;
 }
-.swiper-container-vertical > .swiper-scrollbar{
+.swiper-container-vertical > .swiper-scrollbar {
   left: 3px;
   width: 30%;
 }
-.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
+.swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   width: 10px;
   border-radius: 0;
 }

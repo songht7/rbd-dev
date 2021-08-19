@@ -182,7 +182,7 @@
   background-image: url(../images/icon/email.png);
 }
 
-@media (min-width: 812px) {}
+@media (max-width: 812px) {}
 
 @media (min-width: 812px) and (max-width: 1024px) {
 
@@ -196,6 +196,13 @@
   //   padding: 0;
   //   line-height: 2.2;
   // }
+  #Page-main #Page-container {
+    padding-top: 10.5rem;
+  }
+  .container-xl{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   #Logo {
     max-height: none;
   }
